@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+        <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.author }}{% endif %}</title>
+        <meta name="author" content="{{ site.author }}" />
+        <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
+        <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+
+        <meta name="google-site-verification" content="1RCMpJhD0COl3jIwfQym6aTQHmiu7i8RMm1aHHJIcsQ" />
+
+        <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
+        <meta content="{{ site.title }}" property="og:site_name">
+        {% if page.title %}
+          <meta content="{{ page.title }}" property="og:title">
+        {% else %}
+          <meta content="{{ site.title }}" property="og:title">
+        {% endif %}
+        {% if page.title %}
+          <meta content="article" property="og:type">
+        {% else %}
+          <meta content="website" property="og:type">
+        {% endif %}
+        {% if page.description %}
+          <meta content="{{ page.description }}" property="og:description">
+        {% else %}
+          <meta content="{{ site.description }}" property="og:description">
+        {% endif %}
+        {% if page.url %}
+          <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+        {% endif %}
+        {% if page.date %}
+          <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+          <meta content="{{ site.url }}/about/" property="article:author">
+        {% endif %}
+        {% if page.image %}
+          <meta content="http://aboutashu.com/static/img/posts/{{ page.image }}" property="og:image">
+        {% else %}
+          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+        {% endif %}
+        {% if page.categories %}
+          {% for category in page.categories limit:1 %}
+          <meta content="{{ category }}" property="article:section">
+          {% endfor %}
+        {% endif %}
+        {% if page.tags %}
+          {% for tag in page.tags %}
+          <meta content="{{ tag }}" property="article:tag">
+          {% endfor %}
+        {% endif %}
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@{{ site.share.twitter_username }}">
+        <meta name="twitter:creator" content="@{{ site.share.twitter_username }}">
+        {% if page.title %}
+          <meta name="twitter:title" content="{{ page.title }}">
+        {% else %}
+          <meta name="twitter:title" content="{{ site.title }}">
+        {% endif %}
+        {% if page.url %}
+          <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+        {% endif %}
+        {% if page.description %}
+          <meta name="twitter:description" content="{{ page.description }}">
+        {% else %}
+          <meta name="twitter:description" content="{{ site.description }}">
+        {% endif %}
+        {% if page.header-img %}
+          <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
+        {% endif %}
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+        <!-- Core BootStrap CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Material Design CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap-material-design.min.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/static/css/syntax.css">
+
+        <!-- Custom CSS -->        
+        <link rel="stylesheet" href="/static/css/thickbox.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/projects.css">
+        {% include analytics.html %}
+    </head>
+
+    <body class="home overflow-hidden">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="header-panel shadow-z-2">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="row-picture">
+        <img id="about" class="logo-img" src="{{ site.logo }}" height="75px" width="75px">
+      </div>
+      <div class="row-details">
+      <h4 class="list-group-item-heading">{{ site.author }}</h4>
+      <p class="list-group-item-text">{{ site.about }}</p>
+      {% include social_links.html %}
+      </div>
+        <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-8 col-xs-12">
+      <h2 class="blog-title-pro">{{ page.title }}</h2>
+      <p class="info">
+      {% if page.date %}
+      <span class="time">{{ page.date | date_to_string }}</span>
+      {% endif %}
+      {% if page.categories.size > 0 %}
+    <span class="categories">
+        &raquo; {% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+    </span>
+    {% endif %}
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="container main outer">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                {% include sidemenu.html %}
+            </div> <!-- end /.col-md-3 -->
+
+            <div class="col-md-9 col-xs-12 full">
+                {{ content }}
+
+                <div class="row">
+                  <div class="col-md-12 col-xs-12 footer">
+                <footer>
+                    © Copyright text here
+                     
+                    - <a href="#">Privacy link</a> - Powered by Jekyll.
+                    
+                </footer>
+            </div>
+                </div>
+            </div> <!-- end /.col-md-9 -->
+        </div> <!-- end /.row -->
+
+    </div> <!-- end /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <script src="/static/js/thickbox-compressed.js"></script>
+        <script src="/static/js/material.min.js"></script>
+        <script src="/static/js/main.js"></script>
+        <script src="/static/js/projects.js"></script>
+    </body>
+</html>

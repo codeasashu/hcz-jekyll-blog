@@ -1,0 +1,7 @@
+<ul class="list-separator nav navbar-nav well well-primary {{ page.layout }}">
+{% for i in site.urls %}
+	{% assign current = nil %}
+	{% if page.url == i.url or page.layout == i.layout %} {% assign current = 'current-menu-item' %} {% endif %}
+	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 {{ current }}"><a href="{{ i.url }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
+{% endfor %}
+</ul>
