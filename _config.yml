@@ -8,36 +8,36 @@ disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
 urls:
     - text: Home
-      url: /hcz-jekyll-blog/
+      url: /
       icon: fa-home
       layout: post
     - text: About
-      url: /hcz-jekyll-blog/about/
+      url: /about/
       icon: fa-comments
     - text: Projects
-      url: /hcz-jekyll-blog/projects/
+      url: /projects/
       icon: fa-desktop
     - text: Resume
-      url: \#
+      url: '#'
       icon: fa-graduation-cap
     - text: Github
       url: https://github.com/ashutosh2k12
       icon: fa-github
     - text: XML Feed
-      url: /hcz-jekyll-blog/feed.xml
+      url: /feed.xml
       icon: fa-feed
       
 social:
     - icon: fa-facebook
-      link: \#
+      link: '#'
     - icon: fa-skype
-      link: \#
+      link: '#'
     - icon: fa-twitter
-      link: \#
+      link: '#'
     - icon: fa-linkedin
-      link: \#
+      link: '#'
     - icon: fa-stack-exchange
-      link: \#
+      link: '#'
 
 share:
   twitter_username: \#
