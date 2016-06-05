@@ -1,16 +1,16 @@
-## My Stack Problems
+## HCZ Material theme
 
-> This project forked and has been modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll), and the search posts using [Super Search](https://github.com/chinchang/super-search)
+This is a simple personal material theme, best suited for personal authors, programmars, bloggers. 
 
 ### Demo
-* [https://agusmakmun.github.io](https://agusmakmun.github.io)
+* [http://aboutashu.com/hcz-jekyll-blog](http://aboutashu.com/hcz-jekyll-blog/)
 
 #### Feature
 
 * Sitemap and XML Feed
+* Projects and tags
 * Paginations in homepage
 * Posts under category
-* Realtime Search Posts _(title & description)_ under query.
 * Related Posts
 * Highlight pre
 * Next & Previous Post
@@ -18,4 +18,4 @@
 
 #### Screenshot
 
-![Screenshot Post Page](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/screenshot-post-page.png  "Screenshot Post Page")
+![Screenshot Home Page](https://raw.githubusercontent.com/ashutosh2k12/jekyllthemes/master/thumbnails/hcz-material.png  "Screenshot Home Page")
