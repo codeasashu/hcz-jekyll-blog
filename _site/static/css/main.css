@@ -61,6 +61,10 @@ p.info a {
     height: 30px;
     display: inline-block;
 }
+.icon:hover {
+    color: rgba(255, 255, 255, 0.63);
+    background: #009688;
+}
 .menu ul li {
     list-style: none;
     margin: 5px 0;
