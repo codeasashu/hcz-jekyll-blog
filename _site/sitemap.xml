@@ -3,10 +3,10 @@
   <channel>
     <title>John Smith</title>
     <description>My Personal Blog</description>
-    <link>http://aboutashu.com/hcz-jekyll-blog/</link>
-    <atom:link href="http://aboutashu.com/hcz-jekyll-blog/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Jun 2016 07:59:04 +0530</pubDate>
-    <lastBuildDate>Sun, 05 Jun 2016 07:59:04 +0530</lastBuildDate>
+    <link>http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/</link>
+    <atom:link href="http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/sitemap.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 05 Jun 2016 09:13:55 +0530</pubDate>
+    <lastBuildDate>Sun, 05 Jun 2016 09:13:55 +0530</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Sat, 04 Jun 2016 19:20:39 +0530</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/jekyll/2016/06/04/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/jekyll/2016/06/04/welcome-to-jekyll.html</guid>
+        <link>http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/jekyll/2016/06/04/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/jekyll/2016/06/04/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -150,8 +150,8 @@ end tell
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image of the day downloaded.&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Sat, 04 Jun 2016 00:00:00 +0530</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/others/2016/06/04/example-content.html</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/others/2016/06/04/example-content.html</guid>
+        <link>http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/others/2016/06/04/example-content.html</link>
+        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/others/2016/06/04/example-content.html</guid>
         
         
         <category>others</category>
@@ -183,8 +183,8 @@ end tell
 &lt;p&gt;One cool thing about this is the fact that images adapt themselves to the screen size of device. Try to resize your browser window and check for yourself, Have fun.&lt;/p&gt;
 </description>
         <pubDate>Thu, 04 Jun 2015 19:20:39 +0530</pubDate>
-        <link>http://aboutashu.com/hcz-jekyll-blog/others/2015/06/04/test-page.html</link>
-        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/others/2015/06/04/test-page.html</guid>
+        <link>http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/others/2015/06/04/test-page.html</link>
+        <guid isPermaLink="true">http://aboutashu.com/hcz-jekyll-blog/hcz-jekyll-blog/others/2015/06/04/test-page.html</guid>
         
         
         <category>others</category>
