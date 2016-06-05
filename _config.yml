@@ -8,7 +8,7 @@ disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
 urls:
     - text: Home
-      url: /hcz-jekyll-blog
+      url: /hcz-jekyll-blog/
       icon: fa-home
       layout: post
     - text: About
