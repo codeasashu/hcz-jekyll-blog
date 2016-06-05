@@ -11,7 +11,7 @@ title: Blog
         </div>
         <div class="row-content">
           <div class="least-content">{{ post.date | date_to_string }}</div>
-          <h4 class="list-group-item-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <h4 class="list-group-item-heading"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
 
           <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
         </div>
