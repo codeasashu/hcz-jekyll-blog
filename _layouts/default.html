@@ -11,8 +11,6 @@
         <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
         <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
 
-        <meta name="google-site-verification" content="1RCMpJhD0COl3jIwfQym6aTQHmiu7i8RMm1aHHJIcsQ" />
-
         <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
         <meta content="{{ site.title }}" property="og:site_name">
         {% if page.title %}
@@ -82,15 +80,15 @@
         <!-- Core BootStrap CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <!-- Material Design CSS -->
-        <link rel="stylesheet" href="/static/css/bootstrap-material-design.min.css">
+        <link rel="stylesheet" href="{{ site.url }}/static/css/bootstrap-material-design.min.css">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/static/css/syntax.css">
+        <link rel="stylesheet" href="{{ site.url }}/static/css/syntax.css">
 
         <!-- Custom CSS -->        
-        <link rel="stylesheet" href="/static/css/thickbox.css">
-        <link rel="stylesheet" href="/static/css/main.css">
-        <link rel="stylesheet" href="/static/css/projects.css">
+        <link rel="stylesheet" href="{{ site.url }}/static/css/thickbox.css">
+        <link rel="stylesheet" href="{{ site.url }}/static/css/main.css">
+        <link rel="stylesheet" href="{{ site.url }}/static/css/projects.css">
         {% include analytics.html %}
     </head>
 
@@ -166,9 +164,9 @@
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-        <script src="/static/js/thickbox-compressed.js"></script>
-        <script src="/static/js/material.min.js"></script>
-        <script src="/static/js/main.js"></script>
-        <script src="/static/js/projects.js"></script>
+        <script src="{{ site.url }}/static/js/thickbox-compressed.js"></script>
+        <script src="{{ site.url }}/static/js/material.min.js"></script>
+        <script src="{{ site.url }}/static/js/main.js"></script>
+        <script src="{{ site.url }}/static/js/projects.js"></script>
     </body>
 </html>
