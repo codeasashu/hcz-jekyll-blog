@@ -1,0 +1,103 @@
+---
+---
+$heading_size: 20px;
+$text_size: 13px;
+
+@mixin curhand {
+  cursor: pointer;
+}
+@mixin margins ($margin) {
+  margin: $margin;
+}
+@mixin pad ($pad) {
+  padding: $pad;
+}
+@mixin bg ($size, $repeat: no-repeat, $posTop: center, $posLeft: center) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $posTop $posLeft;
+}
+@mixin borderbtm ($color, $size: 1px) {
+  border-bottom: $size $color solid;
+}
+
+/**
+ * //////////////////////////////////
+ * Project Block
+ * //////////////////////////////////
+ */
+.project-item.not-show{ display: none; }
+
+.project-outer {
+
+    vertical-align: top;
+
+    .project-headlines {
+
+        @include margins(5px 0);
+        @include borderbtm( #EEE );
+        font-size: $heading_size;
+
+    }
+
+    .project-inner > a { display: block; }
+
+    .project-img {
+        height: 200px;
+        display: block;
+        @include bg( cover );
+    }
+
+    span.tags {
+
+        @include borderbtm( #888 );
+        @include margins(0 5px);
+        font-size: ($heading_size / 2);
+
+        &:first-child, &:last-child { margin-left: 0; }
+    }
+
+    .project-footer {
+
+        clear: both;
+        display: inline-block;
+        width: 100%;
+
+        .project-link {
+            display: inline-block;
+            position: relative;
+            float: left;
+        }
+
+        .project-timeline {
+
+            display: inline-block;
+            position: relative;
+            float: right;
+            font-size: $text_size;
+            font-style: italic;
+            vertical-align: middle;
+            @include margins(10px 0);
+            @include pad(5px 0);
+        }
+    }
+}
+
+
+/**
+ * //////////////////////////////////
+ * Project Tags Block
+ * //////////////////////////////////
+ */
+
+.tag-group{
+    @include margins(0 0 25px 0);
+
+    .tag-cloud {
+        @include margins(0 2px);
+        @include curhand;
+
+        .active { background: #ccc; }
+    }
+}
+
