@@ -36,9 +36,9 @@
           <meta content="{{ site.url }}/about/" property="article:author">
         {% endif %}
         {% if page.image %}
-          <meta content="http://aboutashu.com/static/img/posts/{{ page.image }}" property="og:image">
+          <meta content="{{ site.url }}/static/img/posts/{{ page.image }}" property="og:image">
         {% else %}
-          <meta content="http://aboutashu.com/static/img/logo-high-resolution.png" property="og:image">
+          <meta content="{{ site.url }}/static/img/logo-high-resolution.png" property="og:image">
         {% endif %}
         {% if page.categories %}
           {% for category in page.categories limit:1 %}
