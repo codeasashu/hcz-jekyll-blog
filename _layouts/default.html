@@ -89,6 +89,11 @@
         <link rel="stylesheet" href="{{ site.url }}/static/css/thickbox.css">
         <link rel="stylesheet" href="{{ site.url }}/static/css/main.css">
         <link rel="stylesheet" href="{{ site.url }}/static/css/projects.css">
+
+        <script type="text/javascript">
+          //loadingImage is relative to project dir
+          var tb_pathToImage = "{{ site.url }}/static/img/loadingAnimation.gif";
+        </script>
         {% include analytics.html %}
     </head>
 
@@ -124,7 +129,7 @@
       {% endif %}
       {% if page.categories.size > 0 %}
     <span class="categories">
-        &raquo; {% for category in page.categories %}<a href="/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+        &raquo; {% for category in page.categories %}<a href="{{ site.url }}/category/{{ category }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
     </span>
     {% endif %}
       </p>
