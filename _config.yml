@@ -26,6 +26,7 @@ urls:
     - text: XML Feed
       url: /feed.xml
       icon: fa-feed
+      target: _blank
       
 social:
     - icon: fa-facebook
