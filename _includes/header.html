@@ -1,0 +1,39 @@
+<div class="header-panel shadow-z-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="row-picture">
+              <img id="about" class="logo-img" src="{{ site.logo }}" height="75px" width="75px">
+            </div>
+            <div class="row-details">
+              <h4 class="list-group-item-heading">{{ site.author }}</h4>
+              <p class="list-group-item-text">{{ site.about }}</p>
+              {% include social_links.html %}
+            </div>
+            <div class="navbar-header pull-right">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12">
+            <h2 class="blog-title-pro">{{ page.title }}</h2>
+            <p class="info">
+              {% if page.date %}
+                <span class="time">{{ page.date | date_to_string }}</span>
+              {% endif %}
+              {% if page.categories.size > 0 %}
+                <span class="categories">
+                  &raquo; 
+                  {% for category in page.categories %}
+                    <a href="category/{{ category }}">{{ category }}</a>
+                    {% if forloop.last == false %}, {% endif %}
+                  {% endfor %}
+                </span>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>

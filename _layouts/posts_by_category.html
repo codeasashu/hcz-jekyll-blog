@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<div class="content well">
+<header id="post-header">
+    <h1 id="post-subtitle">Articles by category: <em class="text-muted">{{ page.categories }}</em></h1>
+</header>
+
+<div id="post-content">
+    <hr />
+    {% for category in site.categories %}
+        {% capture category_slug %}{{ category | first }}{% endcapture %}
+        {% for c_slug in category_slug %}
+            {% if c_slug == page.categories %}
+                <button class="btn btn-sm btn-primary btn-raised">{{ c_slug }}</button>
+            {% else %}
+                <a href="{{ site.url }}/category/{{ c_slug }}" class="btn btn-sm btn-default btn-raised">{{ c_slug }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    <hr />
+
+    {% if site.categories[page.categories] %}
+    <div class="list-group">
+        {% for post in site.categories[page.categories] %}
+        <div class="list-group-item">
+            <div class="row-action-primary">
+              <i class="fa fa-sticky-note"></i>
+            </div>
+            <div class="row-content">
+            {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
+            {% if forloop.first %}
+                <div class="least-content">{{ post_year }}</div>
+            {% endif %}
+            
+            {% if forloop.first == false %}
+                {% assign previous_index = forloop.index0 | minus: 1 %}
+                {% capture previous_post_year %}{{ site.categories[page.categories][previous_index].date | date: '%Y' }}{% endcapture %}
+                {% if post_year != previous_post_year %}
+                <div class="least-content">{{ post_year }}</div>
+                {% endif %}
+            {% endif %}
+            <div class="least-content">{{ post.date | date_to_string }}</div>
+            <h4 class="list-group-item-heading"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
+            
+            </div>
+        </div>
+        <div class="list-group-separator"></div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p>There are no posts in this categories.</p>
+    {% endif %}
+</div>
+</div>
