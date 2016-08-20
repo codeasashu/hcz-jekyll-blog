@@ -5,7 +5,7 @@ logo: static/img/avatar.png
 github: https://github.com/ashutosh2k12
 about: Freelance developer
 
-baseurl: ""
+baseurl: "http://aboutashu.com/hcz-jekyll-blog"
 url: "http://aboutashu.com/hcz-jekyll-blog"
 
 disqus_shortname: aboutashu
