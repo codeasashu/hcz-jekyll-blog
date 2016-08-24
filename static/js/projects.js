@@ -1,20 +1,18 @@
 (function($){
 	$(document).ready(function(){
 		$(document).on('click','.tag-filter',function(){
-			$('span.tag-filter').removeClass("label-primary");
-			$(this).addClass("label-primary");
-
 			if( $(this).hasClass('all')){
+				$('span.tag-filter').removeClass("label-primary");
 				$('.project-item').showAll();
 			}else{
 				$('.project-item').filterTags( $(this).data('tag') );
 			}
+			$(this).addClass("label-primary");
 		});
 	});
 
 	$.fn.extend({
 	  filterTags: function(tagName) {
-	  	this.removeClass('not-show');
 	    return this.each(function() {
 	    	var itemTagArray = JSON.parse( $(this).attr('data-tags') );
 			if($.inArray(tagName, itemTagArray) === -1){
