@@ -14,7 +14,7 @@ layout: default
             {% if c_slug == page.categories %}
                 <button class="btn btn-sm btn-primary btn-raised">{{ c_slug }}</button>
             {% else %}
-                <a href="{{ site.url }}/category/{{ c_slug }}" class="btn btn-sm btn-default btn-raised">{{ c_slug }}</a>
+                <a href="{{ site.baseurl }}/category/{{ c_slug }}" class="btn btn-sm btn-default btn-raised">{{ c_slug }}</a>
             {% endif %}
         {% endfor %}
     {% endfor %}
@@ -41,7 +41,7 @@ layout: default
                 {% endif %}
             {% endif %}
             <div class="least-content">{{ post.date | date_to_string }}</div>
-            <h4 class="list-group-item-heading"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h4>
+            <h4 class="list-group-item-heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
             <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
             
             </div>
