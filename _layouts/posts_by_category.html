@@ -41,7 +41,7 @@ layout: default
                 {% endif %}
             {% endif %}
             <div class="least-content">{{ post.date | date_to_string }}</div>
-            <h4 class="list-group-item-heading"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h4>
+            <h4 class="list-group-item-heading"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h4>
             <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
             
             </div>

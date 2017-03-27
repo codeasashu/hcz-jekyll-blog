@@ -17,13 +17,12 @@
   },
   {
     "text": "Resume",
-    "url": "#",
+    "url": "/#",
     "icon": "fa-graduation-cap",
-    "layout": "post"
   },
   {
     "text": "Github",
-    "url": "",
+    "url": "/#",
     "icon": "fa-github"
   },
   {
