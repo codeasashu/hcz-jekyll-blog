@@ -10,7 +10,8 @@
         searchResultsEl = document.querySelector('#js-search__results'),
         currentInputValue = '',
         lastSearchResultHash,
-        posts = [];
+        posts = [],
+        sitemap = (baseurl || '') + '/sitemap.xml';
 
     // Changes XML to JSON
     // Modified version from here: http://davidwalsh.name/convert-xml-json
@@ -63,7 +64,7 @@
     }
 
     var xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET","/sitemap.xml");
+    xmlhttp.open("GET",sitemap);
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState != 4) return;
         if (xmlhttp.status != 200 && xmlhttp.status != 304) { return; }
@@ -100,7 +101,6 @@
     });
 
     searchInputEl.addEventListener('input', function onInputChange() {
-        console.log("Search change");
         var currentResultHash, d;
 
         currentInputValue = (searchInputEl.value + '').toLowerCase();
