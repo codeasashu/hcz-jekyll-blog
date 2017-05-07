@@ -18,7 +18,13 @@
             </div>
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12">
-            <h2 class="blog-title-pro">{{ page.title }}</h2>
+          <div class="row">
+            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12">{{ page.title }}</h2>
+            <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
+              <input class="form-control" type="text" id="js-search__input" placeholder="Search">
+              <ul class="search__results" id="js-search__results"></ul>
+            </div>
+            </div>
             <p class="info">
               {% if page.date %}
                 <span class="time">{{ page.date | date_to_string }}</span>

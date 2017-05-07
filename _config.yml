@@ -2,7 +2,7 @@ title: John Smith
 description: My Personal Blog
 author: John Smith
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/ashutosh2k12
+github: https://github.com/codeasashu
 about: Freelance developer
 
 baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
