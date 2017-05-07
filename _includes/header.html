@@ -19,11 +19,13 @@
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12">
           <div class="row">
-            <h2 class="blog-title-pro col-md-6 col-sm-12 col-xs-12">{{ page.title }}</h2>
+            <h2 class="blog-title-pro {% if site.allowsearch ==  true %}col-md-6 col-sm-12 col-xs-12 {% endif %}">{{ page.title }}</h2>
+            {% if site.allowsearch ==  true %}
             <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
               <input class="form-control" type="text" id="js-search__input" placeholder="Search">
               <ul class="search__results" id="js-search__results"></ul>
             </div>
+            {% endif %}
             </div>
             <p class="info">
               {% if page.date %}

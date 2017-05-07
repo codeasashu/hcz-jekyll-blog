@@ -8,6 +8,8 @@ about: Freelance developer
 baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
 url: "https://codeasashu.github.io/hcz-jekyll-blog"
 
+allowsearch: true
+
 disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
 
