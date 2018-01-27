@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108363609-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108363609-2');
+    </script>
     {% include meta.html %}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
       <script type="text/javascript">window.baseurl = '{{ site.url }}';</script>
