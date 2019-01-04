@@ -8,7 +8,6 @@ categories: others
 <h2>1주차 팀 회의</h2>
 <br>
 <hr />
-<br>
 <h3>2018년 12월 31일 월요일 / 11시 30분 ~ 16시 00분 / K-SQUARE </h3>
 <br>
 <h4>참석자</h4>
@@ -37,7 +36,6 @@ categories: others
 </ol>
 <br>
 <hr />
-<br>
 <h3>2019년 01월 02일 수요일 / 8시 40분 ~ 17시 20분 / K-SQUARE </h3>
 <br>
 <h4>참석자</h4>
@@ -55,7 +53,7 @@ categories: others
 <ul>
 <li>1:00pm : Meeting with Anthony Smith
 <ul>
-<li><img src="../static/img/FOG.png"></li>
+<li><img src="/static/img/FOG.png"></li>
 <li>IoT의 전체적인 설명. 예시)토양의 수분 측정, 태양열 측정 등을 이용하여 습도를 측정하고 스프링쿨러 등을 작동시키는 smart farm이 있음.(기초적인 예시)</li>
 <li>가져온 정보를 분석해서 필요한 곳에 응용하는 것이 핵심이다.</li>
 <li>Edge computing, Fog computing 등 여러 가지 예시가 있음.</li>
@@ -68,7 +66,7 @@ categories: others
 </li>
 <li>각자 논문을 읽고 정리함</li>
 <li>예비 소주제 결정 - Smart farm : After receiving data of temperature and humidity, and compare them with standard data. And control or recommend how to manage their data for corns.<br>
-<img src="static/img/structure chart.png"></li>
+<img src="/static/img/structure chart.png"></li>
 </ul>
 <br>
 <h4>달성하지 못한 것</h4>
@@ -94,7 +92,6 @@ categories: others
 </ol>
 <br>
 <hr />
-<br>
 
 _ _ _
 
