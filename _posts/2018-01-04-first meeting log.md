@@ -5,7 +5,7 @@ categories: others
 
 ---
 
-<h2>1주차 팀 회의</h2>
+<h2>사전 팀 회의</h2>
 <br>
 <hr />
 <img src="/static/img/poster.jpg">
