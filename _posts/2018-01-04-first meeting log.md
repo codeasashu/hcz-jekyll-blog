@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "first blog"
+title:  "first meeting log"
 categories: others
 
 ---
@@ -8,6 +8,7 @@ categories: others
 <h2>1주차 팀 회의</h2>
 <br>
 <hr />
+<img src="/static/img/poster.jpg">
 <h3>2018년 12월 31일 월요일 / 11시 30분 ~ 16시 00분 / K-SQUARE </h3>
 <br>
 <h4>참석자</h4>
@@ -167,5 +168,8 @@ categories: others
 <li>데이터의 응용 방법</li>
 </ol>
 <br>
+<img src="/static/img/2019-01-04(1).jpg">
+<img src="/static/img/2019-01-04(2).jpg">
+
 _ _ _
 
