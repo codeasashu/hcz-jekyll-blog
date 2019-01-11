@@ -1,8 +1,8 @@
 [
 	{
-		"name": "Detecing Intruders Through Web Session Tracking",
+		"name": "Detecing Web Session Intruders",
 		"image": "/thumbnails/web_session_pairplot.png",
-		"url": "/assets/detecting_web_session_fraud.html",
+		"url": "https://kozyman.github.io/portfolio/docs/detecting_web_session_fraud.html",
 		"date": "Jan 2019",
 		"tags": ["classification","model selection"]
 	},
