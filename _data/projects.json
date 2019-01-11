@@ -1,10 +1,10 @@
 [
 	{
-		"name": "Cool project 1",
-		"image": "placeholder.jpg",
-		"url": "#",
-		"date": "Jan 2014",
-		"tags": ["Angular JS","API"]
+		"name": "Detecing Intruders Through Web Session Tracking",
+		"image": "/thumbnails/web_session_pairplot.png",
+		"url": "/assets/detecting_web_session_fraud.html",
+		"date": "Jan 2019",
+		"tags": ["classification","model selection"]
 	},
 	{
 		"name": "Cool project 2",
