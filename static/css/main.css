@@ -5,7 +5,7 @@
     width: 100%;
 }
 .full{ font-size: 16px; }
-.logo-img {
+/*.logo-img {
     width: 56px;
     height: 56px;
     border-radius: 60px;
@@ -17,7 +17,7 @@
     text-align: center;
     margin-top: 10px;
     letter-spacing: 2px;
-}
+}*/
 .row-content{
     vertical-align: top;
 }
