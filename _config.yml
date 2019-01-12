@@ -5,7 +5,7 @@ logo: /Kozyman.github.io/static/img/avatar.png
 github: https://github.com/kozyman
 about: mechanical engineer/data scientist
 
-baseurl: "https://kozyman.github.io"
+baseurl: ""
 url: "https://kozyman.github.io"
 
 allowsearch: true
