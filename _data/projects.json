@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Web Session Intruders",
-		"image": "/thumbnails/web_session_pairplot.jpg",
+		"image": "web_session_pairplot.jpg",
 		"url": "/assets/detecting_web_session_fraud.html",
 		"date": "Jan 2019",
 		"tags": ["classification","model selection"]
