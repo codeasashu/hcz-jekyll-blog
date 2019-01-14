@@ -98,7 +98,7 @@ categories: others
 <li>LoRa Shield[Arduino] 연결</li>
 <li>노트북 수령 후 port 정상연결 확인</li>
 <li>Jordan Kramer과 만나서 일정 조정(월요일~목요일 : 4시~5시, 금요일 : 3시~5시. 금요일에는 같이 저녁 식사)</li>
-<ul>
+</ul>
 <br>
 <h4>달성하지 못한 것</h4>
 <ol>
@@ -190,12 +190,19 @@ categories: others
 <li>Gather data to the Thingspeak</li>
 </ol>
 <br>
-<hr />
-<h3>What was lacking</h3>
+<h4>What was lacking</h4>
 <ol>
 <li>Technology of wireless wifi</li>
 </ol>
 <br>
-
+<hr />
+<h3>What to do next week</h3>
+<ol>
+<li>Sensor successful long distance communication</li>
+<li>LoRa View all YouTube Theoretical Lectures</li>
+<li>Back up your blog</li>
+<li>Serverallowing data to enter the computer automatically</li>
+<li>Drawing up a program to get sample data</li>
+</ol>
 _ _ _
 
