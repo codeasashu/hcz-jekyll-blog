@@ -126,7 +126,7 @@ categories: others
 </ul>
 </li>
 <li>Designed blue print of smart farm by CAD and picture<br>
-<img src="/static/img/smart farm_CAD"</li>
+<img src="/static/img/smart farm_CAD"></li>
 </ul>
 <br>
 <h4>What we can't do</h4>
