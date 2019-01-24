@@ -31,15 +31,10 @@ categories: others
 <br>
 <h4>What we can't do</h4>
 <ol>
-<li>Doing LoRa Gateway PDF’s example</li>
-<li>Find Indianapolis’ annual temperature data</li>
-</ol>
-<br>
-<h4>What we can't do</h4>
-<ol>
 <li>Study</li>
 <li>Communicate more than 50m</li>
 </ol>
+<br>
 <h4>What will we do</h4>
 <ol>
 <li>Communication distance measurement</li>
