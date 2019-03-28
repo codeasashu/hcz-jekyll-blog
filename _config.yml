@@ -1,17 +1,17 @@
-title: John Smith
+title: Connor York
 description: My Personal Blog
-author: John Smith
-logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+author: Connor York
+logo: /static/img/avatar.png
+github: https://github.com/connoryork
+about: Software Engineer
 
 baseurl: ""
 url: ""
 
 allowsearch: true
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+disqus_shortname: connoryork
+# google_analytics: UA-72862926-1
 
 share:
   twitter_username: \#
