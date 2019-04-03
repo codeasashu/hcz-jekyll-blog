@@ -20,15 +20,4 @@
     "url": "/static/pdf/resume.pdf",
     "icon": "fa-graduation-cap",
   },
-  {
-    "text": "Github",
-    "url": "https://github.com/connoryork",
-    "icon": "fa-github"
-  },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
-  }
 ]
