@@ -10,12 +10,12 @@ url: ""
 
 allowsearch: true
 
-disqus_shortname: connoryork
+# disqus_shortname: connoryork
 # google_analytics: UA-72862926-1
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
+# share:
+#  twitter_username: \#
+#  fb_appid: 000000000000
 
 
 enableTags: true
