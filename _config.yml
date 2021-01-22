@@ -1,9 +1,9 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
-logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+title: BML
+description: BML Blog
+author: Seockhun Bae, Hyucksoon Jang
+logo: /hcz-jekyll-blog/static/img/BML.png
+github: https://github.com/s-hun
+about: Bioinformatics Machine Learning
 
 baseurl: ""
 url: ""
