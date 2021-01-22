@@ -1,12 +1,17 @@
 .main.outer{padding-top: 50px;}
 .header-panel.shadow-z-2 {
-    background-color: #009587;
+    /* fallback for old browsers */
+    background: #22c1c3;  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #fdbb2d, #22c1c3); 
     padding: 50px 0 15px 0;
     width: 100%;
 }
 .full{ font-size: 16px; }
 .logo-img {
-    width: 56px;
+    width: 195px;
     height: 56px;
     border-radius: 60px;
     margin: 0 auto;
