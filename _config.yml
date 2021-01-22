@@ -2,13 +2,14 @@ title: BML
 description: BML Blog
 author: Seockhun Bae, Hyucksoon Jang
 logo: /hcz-jekyll-blog/static/img/BML.png
-github: https://github.com/s-hun
+github: https://github.com/s-hun/hcz-jekyll-blog/
 about: Bioinformatics Machine Learning
 
 baseurl: ""
 url: ""
 
-allowsearch: true
+# allowsearch: true
+allowsearch : false
 
 disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
