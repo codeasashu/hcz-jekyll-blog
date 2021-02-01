@@ -1,11 +1,11 @@
 .main.outer{padding-top: 50px;}
 .header-panel.shadow-z-2 {
     /* fallback for old browsers */
-    background: #22c1c3;  
+    background: #FFF6E1;  
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);  
+    background: -webkit-linear-gradient(-80deg, #FFF6E1, #378EC4);  
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, #fdbb2d, #22c1c3); 
+    /* background: linear-gradient(145deg, #FFF6E1,#378EC4);  */
     padding: 50px 0 15px 0;
     width: 100%;
 }

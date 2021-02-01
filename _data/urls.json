@@ -1,34 +1,18 @@
 [
   {
-    "text": "Home",
-    "url": "/",
-    "icon": "fa-home",
-    "layout": "post"
-  },
-  {
     "text": "About",
-    "url": "/about/",
-    "icon": "fa-comments"
+    "url": "/about/"
   },
   {
-    "text": "Projects",
-    "url": "/projects",
-    "icon": "fa-desktop"
+    "text": "News",
+    "url": "/#"
   },
   {
-    "text": "Resume",
-    "url": "/#",
-    "icon": "fa-graduation-cap",
+    "text": "Members",
+    "url": "/#"
   },
   {
-    "text": "Github",
-    "url": "/#",
-    "icon": "fa-github"
-  },
-  {
-    "text": "XML Feed",
-    "url": "/feed.xml",
-    "icon": "fa-feed",
-    "target": _blank
+    "text": "Publications",
+    "url": "/projects"
   }
 ]

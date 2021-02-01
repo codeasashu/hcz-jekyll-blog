@@ -5,11 +5,10 @@
             <div class="row-picture">
               <img id="about" class="logo-img" src="{{ site.logo }}" height="75px" width="75px">
             </div>
-            <div class="row-details">
+            <!-- <div class="row-details">
               <h4 class="list-group-item-heading">{{ site.title }}</h4>
               <p class="list-group-item-text">{{ site.about }}</p>
-              <!-- {% include social_links.html %} -->
-            </div>
+            </div> -->
             <div class="navbar-header pull-right">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -19,15 +18,16 @@
           </div>
           <div class="col-md-9 col-sm-8 col-xs-12">
           <div class="row">
-            <h2 class="blog-title-pro {% if site.allowsearch ==  true %}col-md-6 col-sm-12 col-xs-12 {% endif %}">{{ page.title }}</h2>
-            {% if site.allowsearch ==  true %}
+            {% include sidemenu.html %}
+            <!-- <h2 class="blog-title-pro {% if site.allowsearch ==  true %}col-md-6 col-sm-12 col-xs-12 {% endif %}">{{ page.title }}</h2> -->
+            <!-- {% if site.allowsearch ==  true %}
             <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
               <input class="form-control" type="text" id="js-search__input" placeholder="Search">
               <ul class="search__results" id="js-search__results"></ul>
             </div>
-            {% endif %}
+            {% endif %} -->
             </div>
-            <p class="info">
+            <!-- <p class="info">
               {% if page.date %}
                 <span class="time">{{ page.date | date_to_string }}</span>
               {% endif %}
@@ -40,7 +40,7 @@
                   {% endfor %}
                 </span>
               {% endif %}
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
