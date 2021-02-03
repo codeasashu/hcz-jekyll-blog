@@ -5,14 +5,14 @@
   },
   {
     "text": "News",
-    "url": "/#"
+    "url": "/news/"
   },
   {
     "text": "Members",
-    "url": "/#"
+    "url": "/members/"
   },
   {
     "text": "Publications",
-    "url": "/projects"
+    "url": "/projects/"
   }
 ]
