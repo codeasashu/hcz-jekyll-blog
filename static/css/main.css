@@ -1,19 +1,37 @@
-.main.outer{padding-top: 50px;}
+.links{
+    display: inline;
+    padding: 0 25px 0 25px;
+}
+
+
+.main.outer{padding-top: 50px;
+
+}
+
+.col-md-9.col-sm-8.col-xs-12{
+    margin-top: 15px;
+}
+
+.a{
+    color: #000000;
+}
+
 .header-panel.shadow-z-2 {
     /* fallback for old browsers */
-    background: #FFF6E1;  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(-80deg, #FFF6E1, #378EC4);  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background: linear-gradient(145deg, #FFF6E1,#378EC4);  */
-    padding: 50px 0 15px 0;
+    background: #1b272e;  
+    padding: 20px 0 15px 0;
     width: 100%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
 }
-.full{ font-size: 16px; }
+
+.full{ font-size: 16px; 
+}
 .logo-img {
     width: 195px;
     height: 56px;
-    border-radius: 60px;
     margin: 0 auto;
 }
 .logo-turner {
@@ -76,7 +94,8 @@ p.info a {
 }
 
 .menu ul li a:hover, .menu ul li a:focus, li.current-menu-item > a{
-    background: #007D72;
+    
+    background: #32a097;
 }
 li.current-menu-item:before {
     content: "";
