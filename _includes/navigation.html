@@ -1,5 +1,5 @@
-<ul> 
+<ul style="position: absolute; margin-left: 70px">
 {% for i in site.data.urls %}
-	<div class="col-sm-3"><a href="{{ i.url }}">{{ i.text }}</a></div>
+	<div style="display:inline"><a href="{{ i.url }}">{{ i.text }}</a></div>
 {% endfor %}
 </ul>

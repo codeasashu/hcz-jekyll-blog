@@ -1,0 +1,12 @@
+---
+layout: default
+title: Publications
+---
+
+<div class="well">
+    hello universe!
+    {{ site.title }}
+    {% for pub in site.data.pub %}
+    <div>{{ pub.authors | replace: "Jo K", "<b>Jo K</b>" | replace: "조겨리", "<b>조겨리</b>"}}</div>
+    {% endfor %}
+</div>
