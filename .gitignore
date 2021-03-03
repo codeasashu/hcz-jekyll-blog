@@ -4,3 +4,4 @@ _posts/
 category/
 *~
 _change/
+.jekyll-cache/*
