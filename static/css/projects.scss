@@ -2,6 +2,8 @@
 ---
 $heading_size: 20px;
 $text_size: 13px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
 
 @mixin curhand {
   cursor: pointer;
@@ -19,6 +21,20 @@ $text_size: 13px;
 }
 @mixin borderbtm ($color, $size: 1px) {
   border-bottom: $size $color solid;
+}
+
+/// Mixin to prefix a property
+/// @author Hugo Giraudel
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
 }
 
 /**
@@ -83,6 +99,23 @@ $text_size: 13px;
     }
 }
 
+.projects {
+    display: -webkit-flex;
+    display: flex;
+    @include prefix(flex-direction, row, webkit);
+    @include prefix(flex-wrap, wrap, webkit); 
+    align-items: flex-start;
+}
+
+.project-item {
+    @include prefix(flex, 1 0 auto, webkit);
+    @media (min-width: $screen-sm-min) { 
+        width:50%;
+    }
+    @media (min-width: $screen-md-min) { 
+        width:33%;
+    }
+}
 
 /**
  * //////////////////////////////////
